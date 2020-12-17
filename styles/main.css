@@ -277,7 +277,7 @@ body {
     margin-top: 18px;
     margin-left: auto;
     margin-right: auto;
-    width: 416px;
+    width: 370px;
   }
   .hero-section-center__text::before {
     content: none;
@@ -444,7 +444,7 @@ body {
   background-color: #014E56;
   background-repeat: no-repeat;
   background-image: url(../images/bgi-4.svg), url(../images/bgi-5.svg);
-  background-position: left top,  right bottom;
+  background-position: left top, right bottom;
 }
 
 .section-3-inner {
@@ -471,7 +471,7 @@ body {
 
 @media only screen and (max-width: 576px) {
   .section-3-inner__title {
-    width: 450px;
+    width: 380px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
