@@ -277,6 +277,7 @@ body {
     margin-top: 18px;
     margin-left: auto;
     margin-right: auto;
+    width: 460px;
   }
   .hero-section-center__text::before {
     content: none;
@@ -470,7 +471,7 @@ body {
 
 @media only screen and (max-width: 576px) {
   .section-3-inner__title {
-    width: 480px;
+    width: 470px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;

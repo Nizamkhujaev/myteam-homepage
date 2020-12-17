@@ -219,6 +219,7 @@ body{
         height: 4px;
         width: 50px;
         background-color: #79C8C7;
+
       }
       
   }
@@ -250,6 +251,7 @@ body{
       margin-top: 18px;
       margin-left: auto;
       margin-right: auto;
+      width: 460px;
 
       &::before {
         content: none;
@@ -416,7 +418,7 @@ body{
       margin-bottom: 92px;
 
       @media only screen and(max-width:576px) {
-        width: 480px;
+        width: 470px;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
