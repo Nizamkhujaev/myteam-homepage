@@ -338,12 +338,6 @@ body {
     display: flex;
     justify-content: space-between;
 
-    @media only screen and (max-width:576px) {
-      flex-direction: column;
-      padding-bottom: 64px;
-      padding-top: 120px;
-    }
-
     @media only screen and (max-width:768px) {
       flex-direction: column;
       padding-bottom: 100px;
@@ -351,6 +345,12 @@ body {
       box-sizing: border-box;
       padding-left: 80px;
       padding-right: 80px;
+    }
+
+    @media only screen and (max-width:576px) {
+      flex-direction: column;
+      padding-bottom: 64px;
+      padding-top: 120px;
     }
 
   }
@@ -391,11 +391,11 @@ body {
     }
   }
 
-  @media only screen and (max-width:576px) {
+  @media only screen and (max-width:768px) {
     background-position: right top;
   }
 
-  @media only screen and (max-width:768px) {
+  @media only screen and (max-width:576px) {
     background-position: right top;
   }
 
