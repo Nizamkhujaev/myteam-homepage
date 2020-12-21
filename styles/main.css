@@ -534,9 +534,10 @@ body {
 @media only screen and (max-width: 576px) {
   .block-item {
     margin-bottom: 64px;
-    width: 350px;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 }
 
