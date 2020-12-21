@@ -405,13 +405,6 @@ body {
   position: relative;
 }
 
-@media only screen and (max-width: 576px) {
-  .section-2-left__title {
-    width: 315px;
-    margin-bottom: 72px;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .section-2-left__title {
     width: 500px;
@@ -421,6 +414,13 @@ body {
     font-size: 32px;
     line-height: 32px;
     color: #FFFFFF;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .section-2-left__title {
+    width: 240px;
+    margin-bottom: 72px;
   }
 }
 

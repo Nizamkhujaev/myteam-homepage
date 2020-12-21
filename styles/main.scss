@@ -124,7 +124,7 @@ body {
     background-image: none;
   }
 
-  
+
 
 }
 
@@ -364,11 +364,6 @@ body {
     color: #FFFFFF;
     position: relative;
 
-    @media only screen and (max-width:576px) {
-      width: 315px;
-      margin-bottom: 72px;
-    }
-
     @media only screen and (max-width:768px) {
       width: 500px;
       margin-bottom: 64px;
@@ -377,6 +372,11 @@ body {
       font-size: 32px;
       line-height: 32px;
       color: #FFFFFF;
+    }
+
+    @media only screen and (max-width:576px) {
+      width: 240px;
+      margin-bottom: 72px;
     }
 
     &::before {
@@ -855,7 +855,7 @@ body {
     }
   }
 
-  &-right{
+  &-right {
 
     @media only screen and(max-width:768px) {
       display: flex;
@@ -879,9 +879,9 @@ body {
     mix-blend-mode: normal;
     opacity: 0.6;
 
-     @media only screen and(max-width:768px) {
-       text-align: right;
-     }
+    @media only screen and(max-width:768px) {
+      text-align: right;
+    }
 
     @media only screen and(max-width:576px) {
       text-align: center;
