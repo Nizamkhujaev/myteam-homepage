@@ -75,19 +75,19 @@ body {
   box-sizing: border-box;
   max-width: 1140px;
 
-  @media only screen and(max-width:576px) {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-    max-width: 540px;
-  }
-
   @media only screen and(max-width:768px) {
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
     max-width: 720px;
     box-sizing: border-box;
+  }
+
+  @media only screen and(max-width:576px) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 540px;
   }
 
 }
@@ -351,6 +351,9 @@ body {
       flex-direction: column;
       padding-bottom: 64px;
       padding-top: 120px;
+      box-sizing: border-box;
+      padding-left: 0;
+      padding-right: 0;
     }
 
   }
@@ -377,6 +380,7 @@ body {
     @media only screen and (max-width:576px) {
       width: 240px;
       margin-bottom: 72px;
+      padding-left: 24px;
     }
 
     &::before {
@@ -388,6 +392,10 @@ body {
       left: 0;
       margin: auto;
       background-color: $lightcoral;
+
+      @media only screen and (max-width:576px) {
+        left: 24px;
+      }
     }
   }
 
@@ -445,7 +453,7 @@ body {
 
     @media only screen and (max-width:576px) {
       text-align: center;
-      width: 350px;
+      width: 330px;
     }
 
   }
@@ -472,7 +480,7 @@ body {
 
   @media only screen and (max-width:576px) {
     margin-bottom: 64px;
-    width: 300px;
+    width: 330px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
