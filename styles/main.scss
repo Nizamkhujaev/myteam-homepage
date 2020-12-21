@@ -82,6 +82,14 @@ body {
     max-width: 540px;
   }
 
+  @media only screen and(max-width:768px) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 720px;
+    box-sizing: border-box;
+  }
+
 }
 
 .hero-section {
@@ -101,11 +109,22 @@ body {
       background-size: 100% 150px;
     }
 
+    @media only screen and (max-width:768px) {
+      background-position: bottom center;
+      background-size: 100% 120px;
+    }
+
   }
 
   @media only screen and(max-width:576px) {
     background-image: none;
   }
+
+  @media only screen and(max-width:768px) {
+    background-image: none;
+  }
+
+  
 
 }
 
@@ -145,6 +164,11 @@ body {
 
   &-nav.nav--first {
     padding: 83px 20px 83px 80px;
+
+    @media only screen and(max-width:768px) {
+      padding: 74px 20px 74px 48px;
+      box-sizing: border-box;
+    }
   }
 
   @media only screen and(max-width:576px) {
@@ -265,6 +289,41 @@ body {
 
   }
 
+  @media only screen and(max-width:768px) {
+    flex-direction: column;
+
+    &__title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 64px;
+      line-height: 56px;
+      text-align: center;
+      margin-bottom: 24px;
+      color: #FFFFFF;
+
+      .title--pre {
+        color: $lightcoral;
+      }
+    }
+
+    &__text {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 28px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 0;
+      color: #FFFFFF;
+
+      &::before {
+        content: none;
+      }
+    }
+
+  }
+
 }
 
 .section-2 {
@@ -285,6 +344,15 @@ body {
       padding-top: 120px;
     }
 
+    @media only screen and (max-width:768px) {
+      flex-direction: column;
+      padding-bottom: 100px;
+      padding-top: 136px;
+      box-sizing: border-box;
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
   }
 
   &-left__title {
@@ -301,6 +369,16 @@ body {
       margin-bottom: 72px;
     }
 
+    @media only screen and (max-width:768px) {
+      width: 500px;
+      margin-bottom: 64px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 32px;
+      color: #FFFFFF;
+    }
+
     &::before {
       position: absolute;
       content: "";
@@ -314,6 +392,10 @@ body {
   }
 
   @media only screen and (max-width:576px) {
+    background-position: right top;
+  }
+
+  @media only screen and (max-width:768px) {
     background-position: right top;
   }
 
@@ -407,6 +489,11 @@ body {
     padding-top: 140px;
     padding-bottom: 151px;
 
+    @media only screen and(max-width:768px) {
+      padding-bottom: 100px;
+      padding-top: 100px;
+    }
+
     @media only screen and(max-width:576px) {
       padding-bottom: 164px;
     }
@@ -421,6 +508,20 @@ body {
       width: 940px;
       color: #FFFFFF;
       margin-bottom: 92px;
+
+      @media only screen and(max-width:768px) {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+        width: 480px;
+        color: #FFFFFF;
+        margin-bottom: 84px;
+      }
 
       @media only screen and(max-width:576px) {
         width: 380px;
@@ -443,6 +544,10 @@ body {
   display: flex;
   justify-content: space-between;
 
+  @media only screen and(max-width:768px) {
+    flex-direction: column;
+  }
+
   @media only screen and(max-width:576px) {
     flex-direction: column;
   }
@@ -452,6 +557,18 @@ body {
 .card {
   width: 33%;
   position: relative;
+
+  @media only screen and(max-width:768px) {
+    width: 83%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 84px;
+
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
   @media only screen and(max-width:576px) {
     width: 62%;
@@ -528,11 +645,21 @@ body {
   background-image: url(../images/bgi-6.svg);
   background-position: left bottom;
 
+  @media only screen and(max-width:768px) {
+    background-size: 150px 110px;
+  }
+
   &-inner {
     padding: 76px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @media only screen and(max-width:768px) {
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+    }
 
     @media only screen and(max-width:576px) {
       flex-direction: column;
@@ -546,12 +673,23 @@ body {
       line-height: 48px;
       color: #012F34;
 
+      @media only screen and(max-width:768px) {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 32px;
+        margin-right: 84px;
+        color: #012F34;
+      }
+
       @media only screen and(max-width:576px) {
         font-style: normal;
         font-weight: bold;
         font-size: 32px;
         line-height: 32px;
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 24px;
         width: 330px;
         color: #012F34;
@@ -590,6 +728,13 @@ body {
     justify-content: space-between;
     padding: 48px 0;
 
+    @media only screen and(max-width:768px) {
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 56px 25px 10px 25px;
+    }
+
     @media only screen and(max-width:576px) {
       flex-direction: column;
       text-align: center;
@@ -612,6 +757,17 @@ body {
     line-height: 28px;
     color: #FFFFFF;
     @extend %transition;
+
+    @media only screen and(max-width:768px) {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 25px;
+      color: #FFFFFF;
+      padding-left: 0;
+      display: inline-block;
+      text-align: left;
+    }
 
     @media only screen and(max-width:576px) {
       font-style: normal;
@@ -675,11 +831,17 @@ body {
   &-left {
     display: flex;
 
+    @media only screen and(max-width:768px) {
+      justify-content: space-between;
+      margin-bottom: 32px;
+    }
+
     @media only screen and(max-width:576px) {
       flex-direction: column;
       text-align: center;
       margin-left: auto;
       margin-right: auto;
+      align-items: center;
     }
 
     &__links {
@@ -693,6 +855,20 @@ body {
     }
   }
 
+  &-right{
+
+    @media only screen and(max-width:768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media only screen and(max-width:576px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+
   &-info {
     font-style: normal;
     font-weight: 600;
@@ -703,11 +879,14 @@ body {
     mix-blend-mode: normal;
     opacity: 0.6;
 
+     @media only screen and(max-width:768px) {
+       text-align: right;
+     }
+
     @media only screen and(max-width:576px) {
       text-align: center;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 42px;
     }
 
   }
